@@ -1,0 +1,17 @@
+<body>
+  <section class="container">
+    <h4 class="text-center text-primary ">create new password</h4>
+    <p class="text-center">enter your new password</p>
+    <div class="container-fluid">
+      <mat-form-field>
+        <mat-label>New Password</mat-label>
+        <input matInput type="password" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" matInput />
+      </mat-form-field>
+      <button class="btn btn-primary"[routerLink]="'/login'" >Reset</button>
+    </div>
+  </section>
+</body>

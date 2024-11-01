@@ -1,0 +1,23 @@
+@import '../../../coursesidebar/coursesidebar.component.scss';
+.materialdetails{
+  width: 100%;
+  height: 100vh;
+  .card{
+    .card-footer{
+      button{
+        width: 200px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+  .row{
+    .col-lg-10{
+      width: 60%;
+      margin: 20px auto;
+      .card{
+        width: 30%;
+      }
+    }
+  }
+}

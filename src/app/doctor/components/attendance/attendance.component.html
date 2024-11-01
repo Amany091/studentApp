@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2 col-md col-sm-2"></div>
+    <div class="col-lg-10 col-md-6 col-sm-6">
+      <section>
+        <div>
+          <h2>Attendence Report</h2>
+          <hr />
+          <div class="select">
+            <mat-form-field appearance="fill">
+              <mat-label>Select Subject name</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let course of Courses; let i = index">
+                  {{ course }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Subject ID</mat-label>
+              <input type="number" name="" id="" />
+              <i class="fa fa-search"></i>
+            </mat-form-field>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Student Id</th>
+              <th>Week 1</th>
+              <th>Week 2</th>
+              <th>Week 3</th>
+              <th>Week 4</th>
+              <th>Week 5</th>
+              <th>Week 6</th>
+              <th>Week 7</th>
+              <th>Week 8</th>
+              <th>Week 9</th>
+              <th>Week 10</th>
+              <th>Week 11</th>
+            </tr>
+          </thead>
+          <tr>
+            <td data-label="#">1</td>
+            <td data-label="Student ID">20912019200751</td>
+            <td>present</td>
+            <td>Absent</td>
+            <td>Absent</td>
+            <td>present</td>
+            <td>present</td>
+            <td>absent</td>
+            <td>present</td>
+            <td>absent</td>
+            <td>present</td>
+            <td>absent</td>
+            <td>present</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>

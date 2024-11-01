@@ -1,0 +1,14 @@
+.container{
+  position: absolute;
+  left: 20rem;
+  top: 10rem;
+  width: 70%;
+  .card{
+    margin-left: 5px;
+    .card-body{
+      img{
+        width: 225px;
+      }
+    }
+  }
+}

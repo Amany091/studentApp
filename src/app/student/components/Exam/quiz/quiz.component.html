@@ -1,0 +1,22 @@
+<h1>quiz</h1>
+<div *ngIf="!isCompleted">
+  <p *ngFor="let question of questions">{{ question.question }}</p>
+  <ul>
+    <li
+      *ngFor="let option of currentquestion.options"
+      (click)="selectoption(option)"
+    >
+      {{ option }}
+    </li>
+  </ul>
+  <button [disabled]="!selectOption" (click)="nextqestion()">
+    next question
+  </button>
+</div>
+<div *ngIf="isCompleted">
+  <h2>Results</h2>
+  <p>
+    You answered {{ correntanswer }} out of {{ questions.length }} questions
+    correctly
+  </p>
+</div>

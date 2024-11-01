@@ -1,0 +1,51 @@
+@import '../../../sidebar/sidebar.component.scss';
+
+.container {
+  width: 65%;
+  transform: translate(16%, 20%);
+  margin: auto;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  .select {
+    margin: 20px auto ;
+    div {
+      margin: 10px;
+     }
+  }
+  .searchreport{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: fit-content;
+    input{
+    border: none;
+      font-size: small;
+      outline: none;
+    }
+    i{
+      font-size: small;
+    }
+  }
+  table {
+    thead { margin: 10px 0px; }
+    tbody {
+      tr {
+        .present {
+          color: rgb(22 226 42);
+        }
+        .absent {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    table {
+      font-size: small;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<app-sidebar></app-sidebar>
+<section class="container-fluid">
+  <div class="tablecontent">
+    <div class="addtimetable">
+      <i class="fa fa-plus" (click)="addscedule()"></i>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" *ngFor="let table of Timetable; let i = index">
+        <div class="timetablesubjects mt-5">
+          <div id="{{ table.id }}" class="table">
+            <div class="p-2 d-flex justify-content-between">
+              <h6>{{ table.Dep }}</h6>
+              <p>{{ table.coursename }}</p>
+              <p class="col-lg-4 col-sm-12">{{ table.time }}</p>
+            </div>
+            <div id="SupportedContent">
+              <span class="d-flex">
+                <i class="fa fa-user">
+                  <p>{{ table.docname }}</p></i
+                >
+                <i class="fa fas-location-pin">
+                  <p>{{ table.location }}</p>
+                </i>
+              </span>
+            </div>
+          </div>
+          <div class="editting">
+            <button class="btn btn-light border-success">Edit</button>
+            <button class="btn btn light border-danger">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

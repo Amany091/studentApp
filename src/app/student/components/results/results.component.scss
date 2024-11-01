@@ -1,0 +1,45 @@
+@import '../../../sidebar/sidebar.component.scss';
+
+.container {
+  width: 60%;
+  margin: auto;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translate(15%, 11%);;
+  .selectAca {
+    margin: 20px 0px;
+  }
+  .form {
+    margin: auto;
+    padding: 10px 0px;
+    mat-form-field {
+      padding: 10px 0px;
+      select {
+          transition: all ease .2s ;
+          padding: 10px;
+        option {
+        }
+      }
+      mat-label {
+        font-size: small;
+      }
+  }
+  .table {
+    thead {
+      th { font-size: small; }
+    }
+  }
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    width: 70%;
+    table {
+      th, td {
+        font-size: small;
+      }
+    }
+  }
+}

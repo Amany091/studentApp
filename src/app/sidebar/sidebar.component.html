@@ -1,0 +1,91 @@
+<!-- large screen sidebar -->
+<div class="offcanvas offcanvas-start show offcanvaslargescreen col-lg-3" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+  <div class="offcanvas-body">
+    <ul>
+      <li [routerLink]="'/profile'">
+        <i class="fa fa-user"></i> <p>Profile</p>
+      </li>
+      <li [routerLink]="'/events'">
+        <i class="fa fa-plus"></i> <p>Subject Registration</p>
+      </li>
+      <li [routerLink]="'/home'">
+        <i class="fa fa-table"></i> <p>Material</p>
+      </li>
+      <li [routerLink]="'/timetable'">
+        <i class="fa fa-table"></i> <p>Time Table</p>
+      </li>
+      <li [routerLink]="'/notifications'">
+        <i class="fa fa-bell"></i> <p>Notifications</p>
+      </li>
+      <li [routerLink]="'/attendance'" >
+        <i class="fa fa-users"></i> <p> Student Attendance</p>
+      </li>
+      <li [routerLink]="'/results'">
+        <i class="fa fa-check"></i> <p>Student Result</p>
+      </li>
+      <li [routerLink]="'/quiz'">
+        <i class="fa fa-list-ol"></i> <p>Quizes</p>
+       </li>
+      <li [routerLink]="'/feedback'">
+        <i class="fa fa-comment"></i> <p>Feedback</p>
+      </li>
+    </ul>
+
+      <div class="logout">
+        <button class="btn btn-dark">Log Out
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+
+  </div>
+</div>
+
+<!-- small screen sidebar -->
+<div class="offcanvas offcanvas-start show offcanvassmallscreen col-lg-2 " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" >
+  <div class="offcanva-body">
+    <ul>
+      <li [routerLink]="'profile'" class="userhint">
+        <i class="fa fa-user"></i>
+        <div ><p>profile</p></div>
+      </li>
+      <li [routerLink]="'/events'" class="addhint" >
+        <i class="fa fa-plus"></i>
+        <div ><p>Subject Registration</p></div>
+      </li>
+      <li [routerLink]="'/timetable'" class="tabelhint" >
+        <i class="fa fa-table"></i>
+        <div><p>Time Table</p></div>
+      </li>
+      <li [routerLink]="'/home'"class="materialhint" >
+        <i class="fa fa-table"></i>
+        <div ><p>Material</p></div>
+      </li>
+      <li [routerLink]="'/notifications'"class="notificationshint" >
+        <i class="fa fa-bell"></i>
+        <div ><p>Notifications</p></div>
+      </li>
+      <li [routerLink]="'/attendance'" class="attendancehint">
+        <i class="fa fa-users"></i>
+        <div> <p>Student Attendance</p></div>
+      </li>
+      <li [routerLink]="'/results'"class="resulthint" >
+        <i class="fa fa-check"></i>
+        <div  ><p>Student Result</p></div>
+      </li>
+      <li [routerLink]="'/quiz'" class="quizhint">
+        <i class="fa fa-list-ol"></i>
+        <div ><p>Quizes</p></div>
+      </li>
+      <li [routerLink]="'/feedback'" class="feedbackhint">
+        <i class="fa fa-comment"></i>
+        <div ><p>Feedback</p></div>
+      </li>
+    </ul>
+    <div class="logouthint">
+      <i class="fa fa-arrow-right"></i>
+      <div> <p>Logout</p> </div>
+    </div>
+  </div>
+</div>
+

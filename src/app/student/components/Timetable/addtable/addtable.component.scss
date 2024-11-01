@@ -1,0 +1,53 @@
+@import '../../../../coursesidebar/coursesidebar.component.scss';
+.addsubjecttable{
+  *{
+    margin-top: 20px;
+  }
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #ccc;
+  .timetable{
+    display: flex;
+    margin: 15px auto;
+    div {
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0px;
+    text-align: center;
+    color: blue;
+    background-color: #ccc;
+    box-shadow: 5px 5px 5px -5px #000;
+    p { margin-top: 10px; }
+    }
+  }
+  .addlec{
+    padding: 20px;
+    text-align: center;
+    .selectsub{
+      .list{
+        width: 63%;
+        font-size: small;
+        text-transform: capitalize;
+        box-shadow: 10px 10px 10px #ccc;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: auto;
+        p{
+          width: 100%;
+          padding: 5px 10px;
+          transition: all ease-in-out .5s;
+          border-radius: 5px;
+          i{
+            cursor: pointer;
+            margin-left: 10px ;
+          }
+        }
+        p:hover{
+          background-color: #ccc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

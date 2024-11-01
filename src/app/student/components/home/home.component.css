@@ -1,0 +1,153 @@
+
+nav{
+  display: inline;
+  flex-wrap: wrap;
+color: #f8ebeb;
+
+  z-index: 0;
+  height: 10vh;
+}
+nav ul li a{
+  color: #fbefef;
+}
+
+nav button {
+  border: none;
+  outline: none;
+  /* background-color: #A2DDAB; */
+}
+nav #navbarSupportedContent span:hover{
+  border: none;
+  outline: none;
+  color: #A2DDAB;
+}
+
+@media (max-width:520px) {
+  nav .container-fluid{
+    padding: 10px 0px;
+  }
+ .container-fluid{
+    box-sizing: initial;
+  }
+ nav .container-fluid button{
+  display: inline-block;
+ }
+}
+nav .container-fluid{
+  z-index: 2;
+  background-color: #2C3E50;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.icons{
+  margin-top: 15px;
+}
+.navbar .icons ul li i{
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar .icons ul li{
+  display: flex;
+
+  padding: 0 5px 0 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.navbar .icons ul li a:hover{
+ color: #A2DDAB;
+  transition:  0.3s;
+}
+nav .logout a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.logout:hover a{
+  color: red;
+}
+.fa-arrow-right{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #A2DDAB;
+  cursor: pointer;
+
+}
+.iconLogOut{
+  transform: translateX(10px);
+}
+.userAccount{
+  position: absolute;
+right: -4rem;
+top: 0px;
+
+}
+.userAccount img{
+  vertical-align: middle;
+
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 20%;
+}
+.imgLogo img {
+
+  width: 10%;
+  height: 10%;
+
+}
+.userAccount a:hover{
+  color: rgb(104, 104, 248);
+}
+
+.active {
+  color: #A2DDAB;
+}
+@media (max-width: 960px) {
+  .userAccount{
+    display: none;
+  }
+}
+/* @media (min-width: 720px) {
+  .userAccount{
+    display: block;
+  }
+} */
+.col-sm{
+  font-size: 14px;
+}
+.btn-sm{
+  width: auto;
+}
+.col-sm{
+  width: 20%;
+}
+
+/* second section subjects */
+
+#SubjectSelection{
+  background-color: #A2DDAB;
+  box-shadow: #666;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 20px ;
+}
+section .row .card{
+  margin: 10px;
+  cursor: pointer;
+  transition: transform .3s;
+  box-shadow: 0px 3px 5px 0px grey;
+}
+section .row .card:hover{
+  transform: scale(1.08);
+}
+* p{
+  text-align: center;
+}
+@media (max-width:520px) {
+  section{
+    transform: translateX(5rem);
+  }
+}
+

@@ -1,0 +1,118 @@
+@import '../../../coursesidebar/coursesidebar.component.scss';
+
+.assignments{
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  width: 60%;
+  height: max-content;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  cursor: pointer;
+
+  // .submitted{
+  //   color: green;
+  // }
+  // .notsubmitted{
+  //   color: red;
+  // }
+    .card{
+
+      .card-header{
+        p{ font-size: small; }
+      }
+      .card-body{
+        padding: 0px;
+      }
+      .card-footer{
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+
+}
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+.openAssignment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: max-content;
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  padding: 10px;
+  display: block;
+  transition: all ease-in-out .3s;
+  .btn-close{
+    position: absolute;
+    right: 5%;
+  }
+  .container-fluid {
+    button {
+      cursor: pointer;
+      font-size: small;
+      padding: 10px 10rem;
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+      margin: auto;
+      display: inherit;
+    }
+    span {
+      font-size: small;
+      color: #4e54c8;
+      margin: 10px 0px;
+      transform: translateX(50%);
+    }
+    .btn{
+      margin: 10px auto;
+      display: block;
+      padding: 10px 20px;
+    }
+    .btn-close{
+      position: absolute;
+      top: 5%;
+      right: 10%;
+    }
+  }
+}
+// small screen
+@media (max-width:576px) {
+  .openAssignment {
+    width: 60%;
+
+
+    .container-fluid {
+      button {
+        padding: 10px 5rem;
+      }
+    }
+  }
+  .assignments{
+    height: max-content;
+    .card{
+      width: 85%;
+    }
+  }
+}
+
+// @media (min-width:929px) {
+//   .container {
+//     transform: translate(15rem, 5rem);
+//   }
+// }

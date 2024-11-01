@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<section class="mt-5 container">
+  <p id="SubjectSelection">Your Subject</p>
+  <div class="row">
+    <div
+      class="col-lg-4 col-sm-6"
+      *ngFor="let course of CorsesList; let i = index"
+    >
+      <div
+        class="card android"
+        style="width: 18rem"
+        (click)="navigate(course.id)"
+      >
+        <img [src]="course.imgURL" class="card-img-top" alt="notfound" />
+        <div class="card-body">
+          <p class="card-text">{{ course.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

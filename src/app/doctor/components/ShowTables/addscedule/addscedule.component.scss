@@ -1,0 +1,47 @@
+.container{
+  *{
+    margin-top: 20px;
+  }
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  .container-fluid{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    .selectsub{
+      .list{
+        width: 63%;
+        font-size: small;
+        text-transform: capitalize;
+        box-shadow: 10px 10px 10px #ccc;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: auto;
+        p{
+          width: 100%;
+          padding: 5px 10px;
+          transition: all ease-in-out .5s;
+          border-radius: 5px;
+          i{
+            cursor: pointer;
+            margin-left: 10px ;
+          }
+        }
+        p:hover{
+          background-color: #ccc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

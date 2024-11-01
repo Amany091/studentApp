@@ -1,0 +1,33 @@
+<body class="row">
+  <app-sidebar class="col-lg-3"></app-sidebar>
+  <section class="container col-lg-9">
+    <h1 class="text-center text-primary">Feedback</h1>
+    <div class="feedbody">
+      <div class="addfeed">
+        <i class="fa fa-plus rounded"></i>
+      </div>
+      <div class="card mb-3" *ngFor="let feedback of feedback">
+        <div class="card-header">
+          <div class="card-text">
+            <span>
+              <a href="#" class="text-primary"> {{ feedback.code }} </a>
+            </span>
+          </div>
+        </div>
+        <div class="card-body" #value>
+          <div class="card-text">{{ feedback.field }}</div>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="editpost d-flex" #value>
+          <div class="delete btn-bin ml-2">
+            <i class="fa fa-trash text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

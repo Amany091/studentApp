@@ -1,0 +1,72 @@
+<app-coursesidebar></app-coursesidebar>
+<div class="container assignments">
+  <div class="row">
+    <div class="card col-lg-3 col-sm-12 col-md-6">
+      <div (click)="Assignment()">
+        <div class="card-header">
+          <p>{{ assignmenttime | date : "medium" }}</p>
+        </div>
+        <div class="card-body">
+          <img
+            src="../../../../assets/images/android.jpg"
+            alt="not found"
+            width="200px"
+            height="200px"
+          />
+        </div>
+        <div class="card-footer">
+          <p class="fw-bold">Status</p>
+          <p>Submitted</p>
+          <!-- if assignment loaded -->
+        </div>
+      </div>
+    </div>
+    <div class="card col-lg-3 col-sm-12 col-md-6">
+      <div (click)="Assignment()">
+        <div class="card-header">
+          <p>{{ assignmenttime | date : "medium" }}</p>
+        </div>
+        <div class="card-body">
+          <img
+            src="../../../../assets/images/android.jpg"
+            alt="not found"
+            width="200px"
+            height="200px"
+          />
+        </div>
+        <div class="card-footer">
+          <p class="fw-bold">Status</p>
+          <p>Submitted</p>
+          <!-- if assignment loaded -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" *ngIf="overlay" (click)="Assignment()"></div>
+
+<div class="container w" id="overlay" *ngIf="OpenAssignment">
+  <button
+    class="btn btn-close btn-primary"
+    type="button"
+    data-bs-dismiss="overlay"
+    aria-label="Close"
+    (click)="Assignment()"
+  ></button>
+  <div class="container-fluid">
+    <h6 class="text-primary mt-4 mb-4 text-center">Load Assignment</h6>
+    <button type="button" mat-raised-button (click)="fileInput.click()">
+      Choose File
+    </button>
+    <input
+      hidden
+      #fileInput
+      (change)="onFileSelected($event)"
+      type="file"
+      class="mt-4 mb-4"
+    />
+    <span class="filename text-center"> {{ selectedFile?.name }} </span>
+    <div class="btn btn-primary mt-4 mb-4">Send</div>
+  </div>
+</div>

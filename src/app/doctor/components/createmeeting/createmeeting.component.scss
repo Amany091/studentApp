@@ -1,0 +1,72 @@
+.container{
+
+
+  h2{
+      font-size: 2rem;
+
+      color: rgba(44, 62, 80, 1);
+      text-align: center;
+      margin: auto;
+   margin-top: 40px;
+   margin-bottom: 15px;
+  }
+
+
+hr{
+  text-align: center;
+      margin: auto;
+      width: 40%;
+      margin-bottom: 30px;
+}
+.formmeeting{
+  flex-direction: column;
+  mat-form-field{
+    margin-top: 10px;
+    input{
+      padding: 10px;
+      margin-top: 10px;
+    }
+    mat-label{
+      font-size: small;
+      margin-bottom: 10px;
+      color: blue;
+    }
+  }
+}
+
+// input {
+//   margin: 0.4rem;
+//   margin-bottom: 15px;
+//   padding: 10PX;
+//   border-radius: 5px;
+//   border: 1px solid #ccc;
+//   border-bottom: 1px solid #ccc;
+//   box-shadow: 1px 1px 1px #999;
+//   width: 50%;
+//   color: rgba(44, 62, 80, 1);
+//   height: 50px;
+
+
+// }
+
+
+label {
+   font: 1rem 'Fira Sans', sans-serif;
+}
+
+  .btn {
+      width: 50%;
+      height: 40px;
+      margin-top: 40px;
+      margin-left: 5px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      text-align: center;
+
+
+
+  }
+
+
+
+}

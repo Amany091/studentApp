@@ -1,0 +1,53 @@
+@import '../../../coursesidebar/coursesidebar.component.scss';
+
+.container{
+  position: absolute;
+  left: 27rem;
+  top: 4rem;
+  width: 56%;
+  box-shadow: 5px 5px 5px #ccc;
+  .title{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    width: fit-content;
+  }
+  .container-fluid{
+    .comment{
+      p {
+        width: 700px;
+      }
+      #likes{
+        i{
+          font-size: 20px;
+          color: #ccc;
+        }
+      }
+    }
+    mat-form-field{
+
+    display: block;
+    width: 50%;
+    margin: 60px auto;
+    .d-flex{
+      align-items: baseline;
+      input{
+        padding: 10px;
+      }
+    }
+
+    }
+  }
+}
+
+@media (max-width:299.98px) {
+  .container{
+    left: 22rem;
+    width: 77%;
+    .comment{
+      p{
+        font-size: small;
+        width: 410px;
+      }
+    }
+  }
+}

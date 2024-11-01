@@ -1,0 +1,57 @@
+<app-sidebar></app-sidebar>
+
+<section class="container">
+  <h4 class="text-primary m-2">Attendance Report</h4>
+  <div class="select d-flex row">
+    <div class="lectures col-lg col-sm-12">
+      <button class="btn btn-primary" onclick="displayAttendance()">
+        Lectures
+      </button>
+    </div>
+    <div class="sections col-lg col-sm-12">
+      <button class="btn border border-primary" onclick="displayAttendance()">
+        Sections
+      </button>
+    </div>
+  </div>
+  <div class="searchreport border-primary">
+    <i class="fa fa-search ml-2"></i>
+    <input type="date" name="" id="" />
+  </div>
+  <div class="lectablereport" *ngFor="let attendance of attendancereport">
+    <table class="table table-striped" id="lecattendance" *ngIf="lecAttendance">
+      <thead>
+        <th></th>
+        <th>student id</th>
+        <th>Date</th>
+        <th>status</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"># {{ attendance.id }}</th>
+          <td>{{ attendance.code }}</td>
+          <td>12/2/2022</td>
+          <td class="present">{{ attendance.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="lectable" *ngFor="let attendance of attendancesecreport">
+    <table class="table table-striped" id="secattendance" *ngIf="secAttendance">
+      <thead>
+        <th></th>
+        <th>student id</th>
+        <th>Date</th>
+        <th>status</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">#{{ attendance.id }}</th>
+          <td>{{ attendance.code }}</td>
+          <td>12/2/2022</td>
+          <td class="present absent">{{ attendance.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

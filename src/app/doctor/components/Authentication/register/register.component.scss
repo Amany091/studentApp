@@ -1,0 +1,50 @@
+app-animation{
+  position: relative;
+}
+.container{
+  position: absolute;
+  top: 5rem;
+  left: 15rem;
+  width: 70%;
+  height: 75vh;
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    width: fit-content;
+    margin-top: 20px;
+  }
+  mat-form-field{
+    width: 70%;
+    margin-top: 10px;
+    input{
+      padding: 7px 0px;
+      font-size: 15px;
+    }
+    .passcontent{
+      color: blue;
+      font-size: small;
+      cursor: pointer;
+    }
+  }
+  span a {
+    text-decoration: none;
+
+  }
+}
+@media (max-width:768px) {
+  .container{
+    width: 85%;
+    left: 3rem;
+    mat-form-field{
+      width: 90%;
+    }
+  }
+}

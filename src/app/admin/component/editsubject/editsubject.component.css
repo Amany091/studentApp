@@ -1,0 +1,42 @@
+.col .container {
+  display: flex;
+  flex-direction: column;
+}
+.col mat-form-field {
+  margin: 10px 0px;
+}
+mat-form-field mat-label {
+  color: var(--grayscale-pale-gray, #949292);
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 200;
+  text-align: center;
+}
+.nav {
+  position: absolute;
+  right: 5rem;
+}
+.nav img {
+  width: 63.333px;
+  height: 43.333px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.nav a {
+  text-decoration: none;
+  transform: rotate(0.362deg);
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-family: Mulish;
+  font-weight: 700;
+}
+.confirmation {
+  justify-content: space-around;
+}
+.confirmation button {
+  width: 200.716px;
+  height: 50.898px;
+}

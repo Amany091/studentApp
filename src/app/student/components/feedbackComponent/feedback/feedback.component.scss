@@ -1,0 +1,51 @@
+body{
+  .container {
+    width: 70%;
+    height: auto;
+    margin: 75px  auto;
+    box-shadow: 5px 5px 5px #ccc;
+    .feedbody{
+      .addfeed{
+        width: 4%;
+        height: 20%;
+        text-align: center;
+        border-radius: 10%;
+        padding: 10px;
+        background-color: #4e54e8;
+        color: #fff;
+        margin: 20px;
+        position: relative;
+        left: 92%;
+      }
+      .editpost{
+        .delete{
+          width: fit-content;
+          position: absolute;
+          right: 0px;
+          bottom: 5px;
+
+          i{
+            cursor: pointer;
+            font-size: 25px;
+          }
+        }
+      }
+      .card{
+        max-width: 50rem;
+        margin: 15px auto;
+        .card-header {
+          a { font-size: small; }
+         }
+         .card-body{
+          .card-text { font-size: small; }
+          .rating{
+            display: flex; flex-direction: row; margin: 10px 0px ;
+            cursor: pointer;
+            i { font-size: 15px; margin-left: 10px; }
+          }
+        }
+      }
+    }
+
+  }
+}

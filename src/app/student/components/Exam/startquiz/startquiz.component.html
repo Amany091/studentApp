@@ -1,0 +1,63 @@
+<!-- <section style="margin-top: 20px; margin-bottom: 20px">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center text-dange">please select department</h1>
+        <hr />
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="" style="font-size: 18px" class="text-danger"
+              >Department</label
+            >
+            <select name="" id="" class="form-control">
+              <option selected>choose one</option>
+              <option value="1">Information Technology</option>
+              <option value="2">Computer Science</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="" style="font-size: 18px" class="text-danger"
+              >question paper</label
+            >
+            <select name="" id="" class="form-control">
+              <option selected>choose one</option>
+              <option value="1">paper one</option>
+              <option value="2">paper two</option>
+            </select>
+          </div>
+          <div class="card mt-5 col-md-12">
+            <div class="card-body">
+              <h4 class="card-title text-danger">paper one</h4>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <span class="text-danger">Marks</span>100
+                <span class="text-danger pl-5">Total Questions</span>100
+              </h6>
+              <p>Click on button to start exam</p>
+              <div class="m-auto">
+                <button
+                  class="btn btn-primary"
+                  [routerLink]="'/quiz'"
+                  routerLinkActive="router-link-active"
+                >
+                  Click
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<div class="welcome">
+  <h1>Quiz app!</h1>
+  <div class="quizzes">
+    <mat-card class="quiz" *ngFor="let quiz of quiz">
+      <mat-card-title>{{ quiz.label }}</mat-card-title>
+      <mat-card-content>{{ quiz.description }}</mat-card-content>
+      <mat-card-actions>
+        <a routerLink="/{{ quiz.name }}">Start quiz</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

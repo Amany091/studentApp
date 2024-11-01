@@ -1,0 +1,40 @@
+<div class="container">
+  <section class="row">
+    <app-sidebar class="col-lg-3"></app-sidebar>
+    <form action="">
+      <div class="container-fluid col-lg-9">
+        <h4 class="text-primary">Add Feedback</h4>
+        <div class="formfield">
+          <mat-form-field appearance="outline">
+            <mat-label>Add Comment</mat-label>
+            <input
+              class="text-primary"
+              type="text"
+              name="addcomment"
+              id="addcomment"
+              matInput
+            />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>suggest anything we can improve</mat-label>
+            <input
+              type="text"
+              name="qualityimproving"
+              id="qualityimproving"
+              matInput
+            />
+          </mat-form-field>
+          <input type="file" name="Uploadfile" id="uploadfile" />
+        </div>
+      </div>
+      <div class="addfeed row">
+        <button class="btn btn-primary col-lg-6 col-md-6 col-sm-12 ml-3">
+          Submit
+        </button>
+        <button class="btn border-primary col-lg-6 col-md-6 col-sm-12">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </section>
+</div>

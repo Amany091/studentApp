@@ -1,0 +1,48 @@
+<div class="container row">
+  <app-adminsidebar class="col-lg-3"></app-adminsidebar>
+  <div class="col">
+    <div class="container">
+      <div class="nav">
+        <img src="../../../../assets/images/FCI.jpg" alt="" />
+        <a href="#">admin@gmail.com</a>
+      </div>
+      <h1>Staff members</h1>
+      <div class="addstaff">
+        <i class="fa fa-plus"></i>
+        <p>Add Staff</p>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label>Search by name or email address...</mat-label>
+        <i class="fa fa-search"></i>
+        <input matInput type="text" />
+      </mat-form-field>
+      <div class="stafflist">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">
+                <div class="slectall"></div>
+              </th>
+              <th scope="col">Doctor name</th>
+              <th scope="col">Email</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let staff of staffs; let i = index">
+              <td>{{ staff.id }}</td>
+              <td>{{ staff.doctorname }}</td>
+              <td>{{ staff.email }}</td>
+              <td>
+                <button class="btn btn-delete" (click)="(dleteMember)">
+                  Delete
+                </button>
+              </td>
+              <td><button class="btn btn-pin">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

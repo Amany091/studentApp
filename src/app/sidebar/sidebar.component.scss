@@ -1,0 +1,159 @@
+.Activityshowing {
+  width: 20%;
+  background-color: #4e54c8;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  cursor: pointer;
+}
+
+// large screen sidebar styling
+.offcanvaslargescreen {
+  width: 20%;
+  background-color: #ccc;
+  color: #000;
+  // box-shadow: 5px 5px 5px #4e54c8 ;
+  .offcanvas-body{
+    overflow: hidden;
+    height: 100%;
+    transform: translateY(1rem);
+    ul {
+      li { padding: 5px;
+         display: flex;
+         align-items: baseline;
+         border-radius: 10px;
+        i { margin-right: 10px; }
+      }
+
+      li:hover {
+        background-color: #4e54c8;
+        transition: all ease .2s;
+        color: #fff ;}
+    }
+
+  }
+    .logout{
+      button {
+        padding: 10px 5rem;
+        position: absolute;
+        bottom: 3rem;
+        transition: all ease .2s;
+        @media (min-width:576px) {
+        padding: 10px 3rem;
+        }
+        i { margin-left: 5px; }
+      }
+
+    }
+    button:hover {
+      background-color: #fff;
+      color: #4e54e8;
+      i {
+        transform: translateX(1rem);
+        transition: transform ease .3s;
+      }
+    }
+
+}
+
+// small screen sidebar styling
+.offcanvassmallscreen{
+  width: fit-content;
+  padding-right: 30px;
+  background-color: #ccc;
+  box-shadow: 5px 5px 5px #4e54c8;
+  .offcanva-body{
+    width: 20%;
+    ul {
+      list-style-type: none;
+      li {
+        display: flex;
+        margin: 3rem 0px;
+        i {
+          font-size: 18px;
+          color: #000;
+          cursor: pointer;
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 50%;
+        }
+        i:hover{
+          font-size: 25px;
+          transition: all ease .3s;
+        }
+        div {
+          font-weight: bold;
+          font-size: small;
+          visibility: hidden;
+          background-color: #000;
+          border-radius: 10px;
+          color: #fff;
+          width: fit-content;
+          align-items: baseline;
+          position: absolute;
+          left: 6rem;
+          transition: visibility ease .03s;
+          p {
+             width: 130px;
+             text-align: center;
+            }
+        }
+      }
+      }
+        .userhint:hover , .addhint:hover , .tabelhint:hover , .materialhint:hover, .notificationshint:hover, .attendancehint:hover, .resulthint:hover, .quizhint:hover, .feedbackhint:hover{
+          div {
+            visibility: visible;
+
+          }
+        }
+    }
+    .logouthint {
+      width: fit-content;
+      position: relative;
+      left: 2rem;
+      display: flex;
+      align-items: baseline;
+
+      .fa-arrow-right {
+        border-radius: 50%;
+        background-color: red;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+      div {
+        position: absolute;
+        left: 3.5rem;
+        visibility: hidden;
+        p {
+          font-weight: bold;
+           color: red;
+           font-size: small;
+          }
+      }
+
+    }
+    .logouthint:hover {
+      transform: scale(50px);
+      transition: transform ease .3s;
+      div {
+        visibility: visible;
+
+       }
+    }
+  }
+
+// large screen
+@media (min-width:992px){
+  .offcanvassmallscreen { display: none;  }
+  .offcanvaslargescreen { display: block; }
+}
+// small screen
+@media (max-width:576px) {
+  .offcanvaslargescreen { display: none; }
+  .offcanvassmallscreen { display: block; }
+}
+@media (max-width:991.98px) {
+  .offcanvaslargescreen { display: block; }
+  .offcanvaslargescreen { display: none; }
+}

@@ -1,0 +1,35 @@
+<app-coursesidebar></app-coursesidebar>
+<section class="container">
+  <div class="title d-flex align-items-baseline">
+    <h5>Meeting</h5>
+    <i class="fa fa-globe"></i>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let meeting of meeting">
+        <tr>
+          <td>Lecture Number</td>
+          <td>Lecture {{ meeting.lecnumber }}</td>
+        </tr>
+        <tr>
+          <td>Lecture Time</td>
+          <td>{{ meeting.time }}</td>
+        </tr>
+        <tr>
+          <td>Meeting Link</td>
+          <td><a href="http://#"> Meeing Link </a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="savemeeting">
+    <button class="btn btn-primary">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</section>

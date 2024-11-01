@@ -1,0 +1,37 @@
+body {
+  background-color: #4e54c8;
+  height: 100vh;
+  position: relative;
+  .container {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    h4 { text-transform: capitalize; }
+    p { font-size: small; text-transform: capitalize; }
+    .container-fluid{
+      margin-top: 4rem;
+      mat-form-field{
+        width: 60%;
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+        input {
+          padding: 10px;
+          font-size: small;
+        }
+      }
+      button {
+        display: block;
+        margin: 40px auto;
+        padding: 10px 10rem;
+      }
+    }
+  }
+}

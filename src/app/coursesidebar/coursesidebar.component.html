@@ -1,0 +1,75 @@
+<div
+  class="offcanvas offcanvas-start show offcanvaslargescreen"
+  tabindex="-1"
+  id="offcanvas"
+  aria-labelledby="offcanvasLabel"
+  data-bs-backdrop="false"
+>
+  <div class="offcanvas-header" *ngFor="let course of course">
+    <div class="stududentimg"><p>A</p></div>
+    <p>{{ course.coursename }}</p>
+    <p>{{ course.doctorname }}</p>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li [routerLink]="'/home'" class="home">
+        <i class="fa fa-home"></i>
+        <p>Home</p>
+      </li>
+      <li [routerLink]="'/attachment'" class="Attacment">
+        <i class="fa fa-table"></i>
+        <p>Attachment</p>
+      </li>
+      <li [routerLink]="'/assignment'" class="Assignment">
+        <i class="fa fa-book"></i>
+        <p>Assignment</p>
+      </li>
+      <li [routerLink]="'/meeting'" class="Meeting">
+        <i class="fa fa-users"></i>
+        <p>Meeting</p>
+      </li>
+      <li [routerLink]="'/posts'" class="posts">
+        <i class="fa fa-comments"></i>
+        <p>Posts</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-start show offcanvassmallscreen"
+  tabindex="-1"
+  id="offcanvas"
+  aria-labelledby="offcanvasLabel"
+  data-bs-backdrop="false"
+>
+  <div class="offcanvas-header" *ngFor="let course of course">
+    <div class="stududentimg"><p>A</p></div>
+    <p>{{ course.coursename }}</p>
+    <p>{{ course.doctorname }}</p>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li [routerLink]="'/home'" class="home">
+        <i class="fa fa-home"></i>
+        <div class="home">Home</div>
+      </li>
+      <li [routerLink]="'/Attachment'" class="attacment">
+        <i class="fa fa-table"></i>
+        <div class="attachment">Attachment</div>
+      </li>
+      <li [routerLink]="'/Assignment'" class="assignment">
+        <i class="fa fa-book"></i>
+        <div class="assignment">Assignment</div>
+      </li>
+      <li [routerLink]="'/meeting'" class="meeting">
+        <i class="fa fa-users"></i>
+        <div class="meeting">Meeting</div>
+      </li>
+      <li [routerLink]="'/posts'" class="posts">
+        <i class="fa fa-comments"></i>
+        <div class="post">Posts</div>
+      </li>
+    </ul>
+  </div>
+</div>

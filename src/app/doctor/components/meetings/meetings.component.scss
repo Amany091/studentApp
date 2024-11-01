@@ -1,0 +1,11 @@
+@import '../../../studentapp/components/meeting/Meeting.component.scss';
+
+.savemeeting{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  .btn{
+    width: 200px;
+    margin: 10px;
+  }
+}

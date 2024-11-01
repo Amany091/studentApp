@@ -1,0 +1,24 @@
+<body class="row">
+  <app-sidebar class="col-lg-3"></app-sidebar>
+  <section class="container-fluid col-lg-9">
+    <h1 class="text-primary text-center">Notifications</h1>
+    <div class="notification card mb-3">
+      <div class="row g-0" *ngFor="let notification of notification">
+        <div class="col-md-4">
+          <img
+            src="{{ notification.image }}"
+            alt="notfound"
+            class="img-fluid rounded-start"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h6 class="card-title">{{ notification.doctor }}</h6>
+            <p class="card-text">{{ notification.content }}</p>
+            <p class="card-text">{{ notification.timeleft }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

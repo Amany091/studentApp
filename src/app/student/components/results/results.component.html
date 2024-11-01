@@ -1,0 +1,44 @@
+<app-sidebar></app-sidebar>
+
+<div class="container">
+  <h4 class="text-primary m-auto">Academic Result</h4>
+  <div class="selectAca">
+    <div class="form row">
+      <mat-form-field appearance="fill" class="col-lg-6 col-sm-12">
+        <mat-label>Select Academic year</mat-label>
+        <select matNativeControl >
+          <option >first year</option>
+          <option>second year</option>
+          <option>third year</option>
+          <option>fourth year</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="col-lg-6 col-sm-12">
+        <mat-label>Select Semester</mat-label>
+        <select matNativeControl >
+          <option>first tirm</option>
+          <option>second term</option>
+        </select>
+      </mat-form-field>
+    </div>
+  </div>
+  <table class="table table-striped text-center">
+    <thead>
+      <th>Sybject name</th>
+      <th>Mid Term</th>
+      <th>Oral</th>
+      <th>Practical</th>
+      <th>Totla</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let subject of results" >
+        <td> {{subject.subname}} </td>
+        <td>{{subject.midterm}}</td>
+        <td>{{subject.oral}}</td>
+        <td>{{subject.practical}}</td>
+        <td>{{subject.midterm + subject.oral + subject.practical}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
